@@ -1,0 +1,71 @@
+{% extends 'layout.html' %}
+
+{% block title %} Home page {%endblock%}
+
+{%block content%}
+
+<link rel="stylesheet" href={{cdn_css | safe }} type="text/css" />
+<script type="text/javascript" src={{cdn_js | safe }}></script>
+
+
+
+  <div id="container">
+  
+          <form method=get action="/plot/">
+
+            <div class="wykres1" >
+              <center><h3>Dane</h3></center>
+              <input name="zadany_procent_zarazonych" type=number value="{{zadany_procent_zarazonych}}" /> Procent zarażonych osób <br>
+              <input name="liczba_osob" type=number value="{{liczba_osob}}" /> Badana populacja ({{zadany_procent_zarazonych}}% to {{zadana_liczba_chorych}}) <br>
+              <input name="liczba_zakazonych" type=number value="{{liczba_zakazonych}}" /> Liczba zakażonych <br>
+              <div style="height: 15px;"></div>
+              <center><input id="submitt" type=submit value="Uaktualnij dane"></center>
+            </div>
+            
+            <div class="wykres" >
+              <center><h3>Współczynniki</h3></center>
+              <input name="gammaA" type=number step=0.001 value="{{gammaA}}" width="100"/> γA osób hospitalizowanych<br>
+              <input name="gammaR" type=number step=0.001 value="{{gammaR}}" /> γB osób wyleczonych w szpitalu <br>
+              <input name="gammaI" type=number step=0.001 value="{{gammaI}}" /> γI osób wyleczonych poza szpitalem <br>
+
+              <input name="jota" type=number step=0.001 value="{{jota}}" /> ι względna zaraźliwość wirusa u osób hospitalizowanych <br>
+              <input name="kappa" type=number step=0.001 value="{{kappa}}" /> κ zaraźliwość wirusa u osób mających z nim bezpośredni kontakt <br>
+              <input name="ro" type=number step=0.001 value="{{ro}}" /> ρ decydujący o przydzieleniu do klasy zarażonych lub superroznosicieli <br>
+
+            </div>
+            
+          </form>
+ 
+    
+
+    <div class="wykres">
+      {{wjs | safe}}
+      {{wd | safe}}  
+    </div>
+    <div class="wykres">
+        {{pjs | safe}}
+        {{pd | safe}}
+    </div>
+    <div class="splitter" style="clear:both;"></div>
+    <div class="wykres">
+      {{sjs | safe}}
+      {{sd | safe}}
+    </div>
+    <div class="wykres">
+      {{ejs | safe}}
+      {{ed | safe}}
+    </div>
+    <div class="splitter" style="clear:both;"></div>
+    <div class="wykres">
+      {{ijs | safe}}
+      {{id1 | safe}}
+    </div>
+    <div class="wykres">
+      {{hjs | safe}}
+      {{hd | safe}}
+    </div>
+    <div class="splitter" style="clear:both;"></div>
+
+  </div>
+
+{%endblock%}

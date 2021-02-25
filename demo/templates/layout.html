@@ -1,0 +1,34 @@
+<html>
+
+    <head>
+        <title>{%block title%}Flask app {%endblock%} </title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Rubik:wght@600&display=swap" rel="stylesheet">   
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+    </head>
+
+    <body>
+
+        <div id="page-container">
+            <div id="content-wrap">
+                    <div class="nav">
+
+                        <div id="title">Pandemic machine</div>
+                        <div class="menu"><a href="{{ url_for('plot') }}">Model</a></div>
+                        <div class="menu"><a href="{{ url_for('home') }}">Start</a></div>
+                    
+                    </div>
+                
+                    {% block content %}
+
+                    {% endblock %}
+            </div>
+
+            <div id="footer"> <a href ="{{url_for('about')}}"> &copy; Politechnika Poznańska</a>  </div>
+        </div>
+        
+    </body>
+
+</html>
+
+

@@ -1,0 +1,161 @@
+body
+{
+
+    background-color: #f1f8ec;
+    background-image: url('/ostatic/img/wirus.gif');
+    color: #AFD7DA;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    margin: 0 !important;
+}
+
+.nav
+{
+    width:100%;
+	min-height:40px;
+	overflow: hidden;
+	padding: 5px 0;
+	background-color: #263963;
+	
+}
+
+.menu
+{
+	float: right;
+	padding: 5px;
+	margin-right: 35px;
+}
+.menu a
+{
+	text-decoration: none;
+	color: #AFD7DA;
+}
+
+.menu:hover a
+{
+	color:#507DA3;
+}
+
+
+#title
+{
+	float:left;
+	font-family: 'Rubik', sans-serif;
+	margin-left: 12%;
+	font-size: 30px;
+}
+
+.sidebar
+{
+	float: right;
+	margin-right: 12%;
+	background-color: #9b2774;
+	min-height: 500px;
+
+	
+}
+
+#cont
+{
+	float:left;
+	margin-left: 12%;
+	
+	max-width: 460px;
+	min-height: 100vh;
+	color:  #263963;
+	padding-top: 30px;
+	font-size: 16px;
+	text-align: justify;
+}
+
+
+#container
+{
+	margin-left: 10%;
+	width: 80%;
+	top: max(80px,0%);
+	left: 10%;
+	right: 10%;
+	color:  #263963;
+	
+}
+
+.wykres
+{
+	float: left;
+	width: max(350px,49%);
+	padding-right: 1%;
+	padding-bottom: 2%;
+	padding-top: 2%;
+	font-size: medium;
+}
+
+.wykres1
+{
+	float: left;
+	width: max(350px,49%);
+	padding-right: 1%;
+	padding-bottom: 2%;
+	padding-top: 2%;	
+	height: auto;
+	font-size: medium;
+}
+
+.splitt
+{
+	height:10px;
+}
+
+
+
+
+#footer
+{
+    width:100%;
+	line-height:20px;
+	overflow: hidden;
+	padding: 5px 0;
+	background-color: #263963;
+	color: white;
+	font-size: 10px;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	
+	
+}
+
+#footer a{
+	text-decoration: none;
+	color: white;
+	bottom: 90%;
+}
+
+
+
+input{
+	width: 90px;
+	height: 20px;
+	margin-bottom: 10px;
+	
+	
+}
+
+.wykres1 input
+{
+	width: 90px;
+	height: 20px;
+	margin-bottom: 20px;
+
+	margin-left: 100px;
+}
+
+#submitt
+{
+	background-color: #ed4457;
+	width: 200px;
+	position: relative;
+	margin: 0 auto;
+	height: 40px;
+	font-size: large;
+}
