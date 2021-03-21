@@ -1,5 +1,5 @@
 # Pandemic_machine
-Badania sytuacji epidemiologicznej w Wuhan pozwoliły naukowcom stworzyć model matematyczny opisujący  przepieg rozprzestrzeniania się koronawirusa ze szczególnym uwzględnieniem tzw. superroznosicieli wirusa (ang. super-spreaders).
+Badania sytuacji epidemiologicznej w Wuhan pozwoliły naukowcom stworzyć model matematyczny opisujący  przebieg rozprzestrzeniania się koronawirusa ze szczególnym uwzględnieniem tzw. superroznosicieli wirusa (ang. super-spreaders).
 Model matematyczny dzieli społeczeństwo na 5 podgrup: osoby zdrowe, osoby mające bezpośredni kontakt z zarażonymi, osoby hospitalizowane, superroznosicieli oraz osoby zakażające.
 Pod uwagę bierze także współczynniki takie jak np. zaraźliwość u osób bezpośrednio narażonych na kontakt z wirusem.
 			 
